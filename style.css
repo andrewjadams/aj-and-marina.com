@@ -20,7 +20,7 @@ body {
   height: 100%;
 }
 
-ol {
+nav ol {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0;
@@ -30,21 +30,21 @@ ol {
   text-align: center;
 }
 
-li {
+nav li {
   display: inline-block;
   font-size: 1.25rem;
 }
 
-li:nth-child(even) {
+nav li:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
-li.active {
+nav li.active {
   background-color: #839B89;
   padding: 1rem 0.5rem;
 }
 
-a {
+nav a {
   color: inherit;
   display: inline-block;
   padding: 1rem 0;
@@ -53,14 +53,34 @@ a {
   text-align: center;
 }
 
-a:hover {
+nav a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 main {
   display: flex;
-  padding: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+
+main > section {
+  margin: 0 auto;
+  text-align: left;
+  padding: 0.5rem;
+  background-color: tranparent;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    padding: 1rem 1rem 0 1rem;
+    margin: 0 10vw;
+  }
+
+  main > section {
+    text-align: left;
+    padding: 2rem;
+    border-radius: 8px;
+  }
 }
 
 img {
@@ -75,4 +95,49 @@ img {
 
 img.show {
   opacity: 1;
+}
+
+/* Timeline */
+
+main#timeline > section table {
+  font-size: 1.2rem;
+}
+
+main#timeline > section td {
+  vertical-align: top;
+}
+
+main#timeline > section td.date h2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+main#timeline > section tr.event > td:first-child {
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: right;
+  padding: 0.2rem 0.5rem;
+}
+
+main#timeline > section tr.event > td:first-child:after {
+  content: '-';
+  padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  main#timeline > section {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  main#timeline > section table {
+    font-size: 1.6rem;
+  }
+
+  main#timeline > section td.date h2 {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    text-decoration: underline;
+  }
 }
