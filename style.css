@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #839B89;
+  /* background-image: url("background2-modified.gif");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center; */
+  font-family: times;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+#wrapper {
+  background-color: rgba(131, 155, 137, 0.9);
+  height: 100%;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+li:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+li.active {
+  background-color: #839B89;
+  padding: 1rem 0.5rem;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+}
+
+img {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 4s;
+}
+
+img.show {
+  opacity: 1;
+}
