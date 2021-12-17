@@ -59,37 +59,29 @@ nav a:hover {
 }
 
 main {
-  display: flex;
-}
-
-main > section {
-  margin: 0 auto;
-  text-align: left;
-  padding: 0.5rem;
+  text-align: center;
   padding-bottom: 4rem;
-  background-color: tranparent;
 }
 
 @media screen and (min-width: 700px) {
   main {
     padding: 1rem 1rem 0 1rem;
     margin: 0 10vw;
-  }
-
-  main > section {
-    text-align: left;
     padding: 2rem;
-    border-radius: 8px;
   }
+}
+
+img {
+  width: 95%;
+  max-width: 800px;
+  max-height: 800px;
+  margin-top: 1rem;
+  border-radius: 16px;
 }
 
 /* Home */
 
 main#home img.save-the-date {
-  width: 95%;
-  max-width: 1200px;
-  margin: 1rem auto 0 auto;
-  border-radius: 16px;
   opacity: 0;
   transition: opacity 4s;
 }
@@ -101,73 +93,121 @@ main#home img.save-the-date.show {
 
 /* Timeline */
 
-main#timeline > section table {
+main#timeline table {
+  width: 100%;
   font-size: 1.2rem;
   border-collapse: collapse;
+  text-align: left;
 }
 
-main#timeline > section td {
+main#timeline td {
   vertical-align: top;
   padding: 0;
 }
 
-main#timeline > section td.date h2 {
+main#timeline td.date h2 {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0.75rem 1rem;
-  border-radius: 8px 8px 0 0;
   margin: 2rem 0 0 0;
   color: rgba(255, 255, 255, 0.9);
 }
 
-main#timeline > section tr.event {
+main#timeline tr.event {
   background-color: rgba(255, 255, 255, 0.3);
   color: rgba(0, 0, 0, 0.75);
 }
 
-main#timeline > section tr.event > td {
+main#timeline tr.event > td {
   padding: 0.5rem;
 }
 
-main#timeline > section tr.event > td:first-child {
+main#timeline tr.event > td:first-child {
   font-weight: bold;
   white-space: nowrap;
   text-align: right;
   padding-right: 0.5rem;
 }
 
-main#timeline > section tbody tr:last-child > td:first-child {
-  border-radius: 0 0 0 8px;
-}
 
-main#timeline > section tbody tr:last-child > td:last-child {
-  border-radius: 0 0 8px 0;
-}
-
-main#timeline > section tr.event > td:first-child:after {
+main#timeline tr.event > td:first-child:after {
   content: '-';
   padding-left: 0.5rem;
 }
 
 @media screen and (min-width: 700px) {
-  main#timeline > section {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 3rem;
-    padding-top: 1rem;
-  }
-
-  main#timeline > section table {
+  main#timeline table {
     font-size: 1.6rem;
+    width: auto;
+    display: inline-block;
   }
 
-  main#timeline > section td.date h2 {
+  main#timeline td.date h2 {
     border-radius: 8px;
   }
 
-  main#timeline > section tr.event {
+  main#timeline tr.event {
     background-color: transparent;
   }
 
-  main#timeline > section tr.event > td:first-child {
+  main#timeline tr.event > td:first-child {
     padding-left: 2rem;
+  }
+
+  main#timeline tbody tr:last-child > td:first-child {
+    border-radius: 0 0 0 8px;
+  }
+
+  main#timeline tbody tr:last-child > td:last-child {
+    border-radius: 0 0 8px 0;
+  }
+
+}
+
+/* Location */
+
+main#location h2 {
+  font-size: 1.5rem;
+}
+
+main#location h3 {
+  margin-top: 2em;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.3em 0;
+  margin-bottom: 0;
+}
+
+main#location ul {
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  font-size: 1.2rem;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+main#location li {
+  padding-bottom: 1.25em;
+}
+
+
+@media screen and (min-width: 700px) {
+  main#location h2 {
+    font-size: 2rem;
+  }
+
+  main#location h3 {
+    font-size: 2rem;
+    background-color: transparent;;
+    color: inherit;
+    padding: 0;
+    margin-bottom: 0.2em;
+  }
+
+  main#location ul {
+    font-size: 1.6rem;
+    padding: 2em;
+    border-radius: 8px;
   }
 }
