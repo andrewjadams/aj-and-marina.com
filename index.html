@@ -10,8 +10,9 @@
 
     <script>
      document.addEventListener("DOMContentLoaded", () => {
-       setTimeout(
-         () => document.querySelector("img").classList.add("show"),
+       setTimeout(() =>
+         document.querySelector("img.save-the-date")
+                 .classList.add("show"),
          100
        )
      })
@@ -19,40 +20,37 @@
 
   </head>
   <body>
-    <div id="wrapper">
+    <nav>
+      <ol>
+        <li>
+          <a href="/timeline">
+            Timeline
+          </a>
+        </li>
 
-      <nav>
-        <ol>
-          <li>
-            <a href="/timeline">
-              Timeline
-            </a>
-          </li>
+        <li>
+          <a href="/location">
+            Location
+          </a>
+        </li>
 
-          <li>
-            <a href="/location">
-              Location
-            </a>
-          </li>
+        <li>
+          <a href="/lodging">
+            Lodging
+          </a>
+        </li>
 
-          <li>
-            <a href="/lodging">
-              Lodging
-            </a>
-          </li>
+        <li>
+          <a href="/rsvp">
+            RSVP
+          </a>
+        </li>
+      </ol>
+    </nav>
 
-          <li>
-            <a href="/rsvp">
-              RSVP
-            </a>
-          </li>
-        </ol>
-      </nav>
-
-      <main>
-        <img src="background2-modified.gif">
-      </main>
-    </div>
+    <main id="home">
+      <img src="save-the-date.gif" class="save-the-date">
+    </main>
   </body>
 
 </html>
