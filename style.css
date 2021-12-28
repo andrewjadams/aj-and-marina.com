@@ -33,15 +33,23 @@ nav ol {
 nav li {
   display: inline-block;
   font-size: 1.25rem;
+  border: solid #839B89 1px;
+  border-top: none;
+  border-bottom: none;
 }
 
-nav li:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.08);
+nav li:first-child {
+  border-left: none;
+}
+
+nav li:last-child {
+  border-right: none;
 }
 
 nav li.active {
   background-color: #839B89;
   padding: 1rem 0.5rem;
+  border: none;
 }
 
 nav a {
@@ -68,6 +76,10 @@ main {
     padding: 1rem 1rem 0 1rem;
     margin: 0 10vw;
     padding: 2rem;
+  }
+
+  nav li {
+    border-width: 2px;
   }
 }
 
