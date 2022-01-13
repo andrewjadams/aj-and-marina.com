@@ -22,7 +22,7 @@ body {
 
 nav ol {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.5);
