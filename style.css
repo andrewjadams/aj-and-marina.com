@@ -244,8 +244,18 @@ main#rsvp > iframe {
 
 /* Lodging */
 
-main#lodging > ol.toc {
+main#lodging ul,
+main#lodging ol {
   list-style: none;
+}
+
+main#lodging > ol.toc {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+main#lodging ul.offsite-options,
+main#lodging ul.reserve-a-room {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
