@@ -240,3 +240,12 @@ main#rsvp > iframe {
     width: 50vw;
   }
 }
+
+
+/* Lodging */
+
+main#lodging > ol.toc {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
