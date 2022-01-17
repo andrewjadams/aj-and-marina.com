@@ -69,6 +69,8 @@ nav a:hover {
 main {
   text-align: center;
   padding-bottom: 4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -253,10 +255,7 @@ main#lodging > ol.toc {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-main#lodging > p {
-  font-size: 2rem;
-  line-height: 2rem;
-}
+
 main#lodging ul.offsite-options,
 main#lodging ul.reserve-a-room {
   font-size: 1.2rem;
