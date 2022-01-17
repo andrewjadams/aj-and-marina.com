@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-size: 1.25rem;
 
 }
 
@@ -69,8 +70,6 @@ nav a:hover {
 main {
   text-align: center;
   padding-bottom: 4rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 @media screen and (min-width: 700px) {
