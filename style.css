@@ -256,6 +256,6 @@ main#lodging > ol.toc {
 
 main#lodging ul.offsite-options,
 main#lodging ul.reserve-a-room {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
