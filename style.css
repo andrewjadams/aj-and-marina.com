@@ -11,6 +11,8 @@ body {
   font-family: times;
   margin: 0;
   padding: 0;
+  /* Default text size */
+  font-size: 1.2rem;
   height: 100%;
 }
 
@@ -70,6 +72,19 @@ main {
   padding-bottom: 4rem;
 }
 
+main > section {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: left;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+main > section > h2,
+main > section > h3 {
+  text-align: center;
+}
+
 @media screen and (min-width: 700px) {
   main {
     padding: 1rem 1rem 0 1rem;
@@ -84,8 +99,8 @@ main {
 
 img {
   width: 95%;
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 600px;
+  max-height: 600px;
   margin-top: 1rem;
   border-radius: 16px;
 }
@@ -128,6 +143,10 @@ main#timeline tr.event {
   color: rgba(0, 0, 0, 0.75);
 }
 
+main#timeline tr.day > td {
+  text-align: center;
+}
+
 main#timeline tr.event > td {
   padding: 0.5rem;
 }
@@ -157,7 +176,7 @@ main#timeline tr.event > td:first-child:after {
   }
 
   main#timeline tr.event {
-    background-color: transparent;
+    /* background-color: transparent; */
   }
 
   main#timeline tr.event > td:first-child {
@@ -224,6 +243,13 @@ main#location li {
 }
 
 /* Location */
+main#location > section > ul {
+  background-color: transparent;
+  padding: 0;
+  font-size: 1rem;
+  list-style: circle;
+  margin: 1rem 2rem 0 2rem;
+}
 
 main#rsvp {
   height: 100%;
@@ -255,6 +281,5 @@ main#lodging > ol.toc {
 
 main#lodging ul.offsite-options,
 main#lodging ul.reserve-a-room {
-  font-size: 1.2rem;
   line-height: 1.5rem;
 }
