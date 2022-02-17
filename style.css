@@ -8,7 +8,7 @@ body {
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center; */
-  font-family: times;
+  font-family: Times, serif;
   margin: 0;
   padding: 0;
   /* Default text size */
@@ -37,6 +37,7 @@ nav li {
   border: solid #839B89 1px;
   border-top: none;
   border-bottom: none;
+  font-size: 1rem;
 }
 
 nav li:first-child {
@@ -94,6 +95,7 @@ main > section > h3 {
 
   nav li {
     border-width: 2px;
+    font-size: inherit;
   }
 }
 
@@ -102,7 +104,7 @@ img {
   max-width: 600px;
   max-height: 600px;
   margin-top: 1rem;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 /* Home */
@@ -132,7 +134,7 @@ main#timeline td {
 }
 
 main#timeline td.date h2 {
-  background-color: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1) 20%, rgba(0, 0, 0, 0.1));
   padding: 0.75rem 1rem;
   margin: 2rem 0 0 0;
   color: rgba(255, 255, 255, 0.9);
@@ -172,11 +174,7 @@ main#timeline tr.event > td:first-child:after {
   }
 
   main#timeline td.date h2 {
-    border-radius: 8px;
-  }
-
-  main#timeline tr.event {
-    /* background-color: transparent; */
+    border-radius: 8px 8px 0 0;
   }
 
   main#timeline tr.event > td:first-child {
