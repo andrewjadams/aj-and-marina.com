@@ -16,6 +16,11 @@ body {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tangerine', cursive;
+  font-size: 2em;
+}
+
 #wrapper {
   background-color: rgba(131, 155, 137, 0.9);
   height: 100%;
@@ -37,6 +42,8 @@ nav li {
   border: solid #839B89 1px;
   border-top: none;
   border-bottom: none;
+  font-family: 'Tangerine', cursive;
+  font-size: 1.1em;
 }
 
 nav li:first-child {
@@ -94,6 +101,7 @@ main > section > h3 {
 
   nav li {
     border-width: 2px;
+    font-size: 2em;
   }
 }
 
@@ -118,15 +126,19 @@ main#home img.save-the-date.show {
 
 /* Timeline */
 
+main#timeline {
+  font-family: 'Tangerine', cursive;
+}
+
 main#timeline table {
   width: 100%;
-  font-size: 1.2rem;
   border-collapse: collapse;
   text-align: left;
 }
 
 main#timeline td {
   vertical-align: top;
+  font-size: 1.35em;
   padding: 0;
 }
 
@@ -147,7 +159,15 @@ main#timeline tr.day > td {
 }
 
 main#timeline tr.event > td {
-  padding: 0.5rem;
+  padding: 0.5em 0.4em;
+}
+
+main#timeline tr.event.first > td {
+  padding-top: 1em;
+}
+
+main#timeline tr:last-child > td {
+  padding-bottom: 1em;
 }
 
 main#timeline tr.event > td:first-child {
@@ -195,16 +215,20 @@ main#timeline tr.event > td:first-child:after {
 /* Location */
 
 main#location h2 {
-  font-size: 1.5rem;
+
 }
 
 main#location h3 {
   margin-top: 2em;
-  font-size: 1.3rem;
   background-color: rgba(0, 0, 0, 0.1);
   color: rgba(255, 255, 255, 0.9);
   padding: 0.3em 0;
   margin-bottom: 0;
+}
+
+main#location h4 {
+  margin-bottom: 0.25em;
+  margin-top: 1em;
 }
 
 main#location ul {
@@ -218,24 +242,19 @@ main#location ul {
 
 main#location li {
   padding-bottom: 1.25em;
+  font-size: 1.25em;
 }
 
 
 @media screen and (min-width: 700px) {
-  main#location h2 {
-    font-size: 2rem;
-  }
-
   main#location h3 {
-    font-size: 2rem;
-    background-color: transparent;;
+    background-color: transparent;
     color: inherit;
     padding: 0;
     margin-bottom: 0.2em;
   }
 
   main#location ul {
-    font-size: 1.6rem;
     padding: 2em;
     border-radius: 8px;
   }
